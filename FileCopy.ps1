@@ -37,5 +37,5 @@ foreach ($computer in $computers){
             robocopy $location\  \\$computer\$rwd $file1,$file2 /mt:128 /w:1 /r:1 /log+:$wd\$log$username.log
             }
        Else{
-       add-content -path C:\Users\adm-l1d-knevala\Desktop\powershell\filecopy\Logs\offline.txt "$computer"}
+       add-content -path C:\Users\%USER%\Desktop\powershell\filecopy\Logs\offline.txt "$computer"}
 }
